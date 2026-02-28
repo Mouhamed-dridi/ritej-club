@@ -1,13 +1,341 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرحة العيد 4 - مبادرة فرحة</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <i data-lucide="heart" style="fill: currentColor;"></i>
+                <span>فرحة</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">عن المبادرة</a></li>
+                <li><a href="#help">كيف تساعد؟</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-nav-accent">انضم إلينا <i data-lucide="chevron-left" size="16"></i></a>
+        </div>
+    </nav>
+
+    <header id="heroSection">
+        <section id="hero">
+            <div class="container hero-layout">
+                <div class="hero-text">
+                    <div class="hero-tagline">
+                        <i data-lucide="heart" size="18" style="fill: currentColor;"></i> معاً نغير العالم
+                    </div>
+                    <h1>فرحة العيد 4</h1>
+                    <div class="campaign-slogan">
+                        <span class="slogan-intro">كون سبب في فرحة</span>
+                        <span class="slogan-main">صغير محتاج</span>
+                    </div>
+                    <p>ساهم معنا في إدخال السرور على قلوب الأطفال والعائلات المحتاجة في هذا العيد. تبرعك يصنع فرقاً
+                        حقيقياً وملموساً.</p>
+
+                    <div class="hero-actions">
+                        <a href="#help" class="btn btn-accent">تبرع الآن <i data-lucide="arrow-left-circle"
+                                size="20"></i></a>
+
+                        <div class="donor-group">
+                            <div class="donor-avatars">
+                                <img src="../images/1.png" alt="Donor 1">
+                                <img src="../images/2.png" alt="Donor 2">
+                                <img src="../images/4.png" alt="Donor 4">
+                                <img src="../images/5.png" alt="Donor 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop"
+                        alt="Volunteer Hero">
+                </div>
+            </div>
+
+            <div class="hero-hands">
+                <!-- Simple SVG Hand silouhettes pattern placeholder -->
+                <svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" style="fill: var(--accent-purple);">
+                    <path
+                        d="M50 200 C 100 120, 150 180, 200 100 S 300 150, 400 80 S 550 180, 700 90 S 850 150, 1000 70 V 200 Z"
+                        opacity="0.2" />
+                </svg>
+            </div>
+        </section>
+    </header>
+
+    <section id="about">
+        <div class="container about-content reveal">
+            <div class="about-visual">
+                <div class="heart-mask-container"></div>
+                <div class="inlay-circle">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=300&auto=format&fit=crop"
+                        alt="Helping hand">
+                </div>
+                <div class="experience-badge">
+                    <span class="years">15+</span>
+                    <span class="text">سنة من العطاء</span>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <div class="about-tagline">
+                    <i data-lucide="heart" size="18" style="fill: currentColor;"></i> فرحة العيد 4 – ISGS Microsoft Club
+                </div>
+                <h2>كون سببًا في ابتسامة طفل</h2>
+                <p>
+                    مبادرة "فرحة العيد 4" هي عمل تطوعي إنساني ينظمه أعضاء نادي ISGS Microsoft، بهدف إدخال السعادة إلى
+                    قلوب الأطفال المحتاجين بمناسبة عيد الفطر المبارك.
+                    <br><br>
+                    يقوم أعضاء النادي بجمع التبرعات المالية والملابس والهدايا من الطلبة وأفراد المجتمع، ثم يتم تجهيزها
+                    وتوزيعها على الأطفال الأكثر احتياجًا، حتى يعيشوا فرحة العيد مثل غيرهم.
+                    <br><br>
+                    نؤمن أن العيد لا يكتمل إلا بابتسامة طفل، ودورنا هو أن نكون سببًا في تلك الابتسامة.
+                </p>
+
+                <div class="help-team-item">
+                    <div class="team-icon">
+                        <i data-lucide="hand-heart" size="30"></i>
+                    </div>
+                    <div class="team-info">
+                        <h4>ابدأ بمساعدة الفريق</h4>
+                        <span>هناك طرق عديدة للمساهمة وإحداث فرق</span>
+                    </div>
+                </div>
+
+                <div class="about-footer">
+                    <a href="#help" class="btn btn-accent">استكشف المزيد <i data-lucide="arrow-left-circle"
+                            size="20"></i></a>
+
+                    <a href="#contact" class="contact-call">
+                        <div class="call-icon">
+                            <i data-lucide="credit-card" size="24"></i>
+                        </div>
+                        <div class="call-text">
+                            <span>تبرع الآن عبر البريد أو D17</span>
+                            <strong>29787599</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-join">
+        <div class="container reveal">
+            <div class="volunteer-content">
+                <div class="volunteer-visual">
+                    <div class="volunteer-image-frame">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop"
+                            alt="Volunteers working together">
+                    </div>
+                </div>
+
+                <div class="volunteer-text">
+                    <div class="join-tagline">
+                        <i data-lucide="heart" size="18" style="fill: currentColor;"></i> انضم إلينا
+                    </div>
+                    <h2>ادعم فرحة العيد للأطفال</h2>
+                    <p>
+                        فريقنا التطوعي مكتمل وجاهز للعمل، ونقوم حاليًا بالتحضير لتجهيز ملابس العيد للأطفال المحتاجين.
+                        <br><br>
+                        في هذه المرحلة، لا نحتاج إلى متطوعين إضافيين، نحتاج إلى دعمكم المالي لنتمكن من شراء ملابس جديدة
+                        وإيصالها للأطفال قبل حلول العيد.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <span>دعمك يصنع الفرحة</span>
+                                <i data-lucide="chevron-down" size="20"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>مساهمتك المالية تساعدنا في شراء ملابس عيد جديدة للأطفال المحتاجين، لنمنحهم لحظة سعادة
+                                    يستحقونها.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span>ملابس جديدة… بداية أجمل</span>
+                                <i data-lucide="chevron-down" size="20"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>تبرعك يذهب مباشرة لتجهيز وشراء ملابس تليق بفرحة العيد، ليشعر كل طفل بقيمته وكرامته.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span>معًا نكمل الرسالة</span>
+                                <i data-lucide="chevron-down" size="20"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>فريقنا جاهز للتنفيذ، ودعمك هو الخطوة التي تكمل المهمة وتحوّل النية الطيبة إلى أثر
+                                    حقيقي.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="help">
+        <div class="container reveal">
+            <h2 class="section-title">كيف يمكنك المساعدة؟</h2>
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i data-lucide="wallet" size="40"></i>
+                    </div>
+                    <h3>التبرع بالمال</h3>
+                    <p>مساهمتكم المالية تمكننا من شراء الملابس الجديدة والمستلزمات فوراً.</p>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i data-lucide="shirt" size="40"></i>
+                    </div>
+                    <h3>التبرع بالملابس</h3>
+                    <p>نستقبل الملابس الجديدة بجميع المقاسات لتوزيعها على الأطفال.</p>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i data-lucide="users" size="40"></i>
+                    </div>
+                    <h3>التطوع معنا</h3>
+                    <p>انضم لفريقنا التنظيمي وساعدنا في الوصول لكل طفل محتاج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate-now">
+        <div class="container">
+            <div class="donation-wide-container reveal">
+                <div class="donation-input-panel">
+                    <h3>تبرع الآن</h3>
+                    <div class="amount-buttons">
+                        <button class="amt-btn" data-amount="10">$10</button>
+                        <button class="amt-btn" data-amount="20">$20</button>
+                        <button class="amt-btn" data-amount="30">$30</button>
+                        <button class="amt-btn" data-amount="40">$40</button>
+                        <button class="amt-btn active" data-amount="50">$50</button>
+                    </div>
+                    <div class="custom-amount-row">
+                        <input type="number" class="custom-amt-input" id="custom-amount" value="50"
+                            placeholder="مبلغ آخر">
+                        <button class="btn btn-accent" id="final-donate-btn">
+                            <i data-lucide="chevron-right-circle" size="20"></i> تبرع الآن
+                        </button>
+                    </div>
+                </div>
+
+                <div class="donation-content-panel">
+                    <div class="donate-now-tag">
+                        <i data-lucide="heart" size="18" style="fill: currentColor;"></i> تبرع الآن
+                    </div>
+                    <h2>ادعم الأطفال من خلال جمع تبرعات قيمة</h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-top-accent reveal">
+            <div class="accent-contact-bar">
+                <div class="contact-info-item">
+                    <div class="icon-circle">
+                        <i data-lucide="map-pin" size="24"></i>
+                    </div>
+                    <div class="info-text">
+                        <span>موقعنا</span>
+                        <strong>سوسة، تونس</strong>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon-circle">
+                        <i data-lucide="mail" size="24"></i>
+                    </div>
+                    <div class="info-text">
+                        <span>راسلنا</span>
+                        <strong>isgsmicrosoftclub@gmail.com</strong>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon-circle">
+                        <i data-lucide="credit-card" size="24"></i>
+                    </div>
+                    <div class="info-text">
+                        <span>D17</span>
+                        <strong>29787599</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-main-content">
+            <div class="footer-grid reveal">
+                <div class="footer-brand">
+                    <h2><i data-lucide="heart" size="32"
+                            style="fill: var(--accent-purple); color: var(--accent-purple);"></i> فرحة العيد 4</h2>
+                    <p>
+                        مبادرة تطوعية تهدف لإدخال السرور على قلوب الأطفال والعائلات المحتاجة. معاً نصنع فرقاً حقيقياً في
+                        حياة الآخرين.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ISGsMicrosoftNET1" class="social-btn" target="_blank">
+                            <i data-lucide="facebook" size="20"></i>
+                        </a>
+                        <a href="https://www.instagram.com/isgs_microsoft_club" class="social-btn" target="_blank">
+                            <i data-lucide="instagram" size="20"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i data-lucide="mail" size="18"></i>
+                            isgsmicrosoftclub@gmail.com
+                        </li>
+                        <li>
+                            <i data-lucide="phone" size="18"></i>
+                            29787599
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin" size="18"></i>
+                            ISG de Sousse, rue Abdlaaziz il Behi
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 ISGS Microsoft Club - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

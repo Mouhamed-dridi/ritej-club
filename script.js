@@ -1,0 +1,71 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Lucide Icons initialization
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
+
+    // Reveal on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add('active');
+            }
+        });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial check
+
+    // Donation Amount Selection
+    const amtButtons = document.querySelectorAll('.amt-btn');
+    const customAmtInput = document.getElementById('custom-amount');
+    const finalDonateBtn = document.getElementById('final-donate-btn');
+
+    if (amtButtons && customAmtInput) {
+        amtButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                amtButtons.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                // Update input field
+                customAmtInput.value = btn.getAttribute('data-amount');
+            });
+        });
+
+        // If user manually types in custom amount, remove active states from buttons
+        customAmtInput.addEventListener('input', () => {
+            amtButtons.forEach(b => b.classList.remove('active'));
+        });
+    }
+
+    if (finalDonateBtn) {
+        finalDonateBtn.addEventListener('click', () => {
+            const amount = customAmtInput.value;
+            console.log(`Redirecting to donation with amount: ${amount}`);
+            window.location.href = 'https://play.google.com/store/apps/details?id=tn.mobipost&hl=en';
+        });
+    }
+
+    // Accordion Logic
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    if (accordionHeaders) {
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const currentItem = header.parentElement;
+                const isActive = currentItem.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    currentItem.classList.add('active');
+                }
+            });
+        });
+    }
+});
