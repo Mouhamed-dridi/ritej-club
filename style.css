@@ -494,6 +494,23 @@ section {
     margin: 0 auto 30px;
 }
 
+.help-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.help-link:hover {
+    gap: 10px;
+    text-shadow: 0 0 10px rgba(166, 86, 138, 0.2);
+}
+
 /* Contact */
 #contact {
     background: #0f172a;
