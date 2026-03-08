@@ -103,8 +103,15 @@ nav .container {
     color: var(--dark-purple);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-decoration: none;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
