@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         window.lucide.createIcons();
     }
 
-    // Reveal on scroll
+    // Reveal on scroll (Throttled for better performance)
+    let isScrolling = false;
     const revealElements = document.querySelectorAll('.reveal');
     const revealOnScroll = () => {
         revealElements.forEach(el => {
@@ -13,8 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.classList.add('active');
             }
         });
+        isScrolling = false;
     };
-    window.addEventListener('scroll', revealOnScroll);
+
+    window.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            window.requestAnimationFrame(revealOnScroll);
+            isScrolling = true;
+        }
+    });
     revealOnScroll(); // Initial check
 
     // Donation Amount Selection
